@@ -1,0 +1,16 @@
+
+
+.cta-btn {
+    background-color: $btn-blue;
+    border: none;
+    color: white;
+    padding: .5rem 4rem;
+    border-radius: 3px;
+    font-family: $font-cta;
+    font-weight: $font-cta-bold;
+}
+
+.cta-section-btn {
+    @extend .cta-btn;
+    padding: .5rem 2rem;
+}

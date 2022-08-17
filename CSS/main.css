@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,4 +48,55 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.cta-btn, .cta-section-btn {
+  background-color: hsl(224deg, 93%, 58%);
+  border: none;
+  color: white;
+  padding: 0.5rem 4rem;
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.cta-section-btn {
+  padding: 0.5rem 2rem;
+}
+
+footer {
+  padding: 2rem 5rem;
+}
+
+.footer-grid {
+  display: grid;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.cta-section {
+  padding: 2rem 5rem;
+}
+
+.nav {
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__.nav-link {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

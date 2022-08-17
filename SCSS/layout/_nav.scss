@@ -1,0 +1,11 @@
+
+.nav {
+    padding: $general-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__.nav-link {
+        display: none;
+    }
+}

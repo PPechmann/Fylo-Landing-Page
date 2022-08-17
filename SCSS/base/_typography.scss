@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+$font-cta: 'Raleway', sans-serif;
+$font-cta-normal: 400;
+$font-cta-bold: 700;
+$font-body: 'Open Sans', sans-serif;
+
+h1, h2, h3{
+    font-family: $font-cta;
+    font-weight: $font-cta-bold;
+}
+
+p{
+    font-family: $font-body;
+}
