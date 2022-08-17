@@ -1,0 +1,27 @@
+header  {
+    margin-bottom: 7.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding:$general-padding;
+}
+
+.cta-section {
+    display: flex;
+    padding: $general-padding;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.hero-content, .main-content {
+    margin-right: 4rem;
+}
+
+
+.hero-illustration, .main-illustration {
+    width: 45%;
+}

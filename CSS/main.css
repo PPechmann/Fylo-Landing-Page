@@ -53,32 +53,174 @@ table {
 h1, h2, h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.4rem;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
-.cta-btn, .cta-section-btn {
+.footer-grid p {
+  font-size: 1rem;
+}
+
+.cta-btn, .cta-form__btn {
   background-color: hsl(224deg, 93%, 58%);
   border: none;
   color: white;
-  padding: 0.5rem 4rem;
+  padding: 0.75rem 4.5rem;
   border-radius: 3px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+  font-size: 0.8rem;
 }
 
-.cta-section-btn {
-  padding: 0.5rem 2rem;
+.cta-form__btn {
+  padding: 1rem 3rem;
+  display: block;
+}
+
+.main-link {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid hsl(170deg, 45%, 43%);
+  padding-bottom: 0.2rem;
+  color: hsl(170deg, 45%, 43%);
+  font-size: 1.2rem;
+  width: 12rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-input, .cta-form__input {
+  width: 19rem;
+  height: 1rem;
+  padding: 0.6rem;
+  margin-right: 1rem;
+}
+.hero-input::-moz-placeholder, .cta-form__input::-moz-placeholder {
+  opacity: 50%;
+}
+.hero-input:-ms-input-placeholder, .cta-form__input:-ms-input-placeholder {
+  opacity: 50%;
+}
+.hero-input::placeholder, .cta-form__input::placeholder {
+  opacity: 50%;
+}
+
+.cta-form__input {
+  width: 25rem;
+  margin: 0rem 0rem 1rem 0rem;
+  border-radius: 3px;
+  border: none;
+  padding: 1rem 1.5rem;
+}
+
+.testimonial {
+  box-shadow: 0 0 3px hsl(214deg, 16%, 92%);
+  background-color: white;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  width: 42%;
+}
+.testimonial__text {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.testimonial__signature {
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 2.5rem 7rem;
+}
+.testimonial__img {
+  grid-row: span 2;
+  border-radius: 50%;
+  height: 2rem;
+}
+.testimonial__name {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+.testimonial__job-title {
+  grid-row: 2;
+  grid-column: 2;
+  font-size: 0.6rem;
+  margin-bottom: 0rem;
 }
 
 footer {
-  padding: 2rem 5rem;
+  padding: 7.5rem 5rem;
+  background-color: hsl(243deg, 87%, 12%);
+  color: hsl(240deg, 75%, 98%);
 }
 
 .footer-grid {
   display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  align-items: center;
+  justify-items: flex-start;
+}
+.footer-grid__contact {
+  justify-self: flex-start;
+}
+.footer-grid__phone-icon, .footer-grid__mail-icon {
+  margin-right: 1.5rem;
+}
+
+.footer-links {
+  display: grid;
+  row-gap: 2rem;
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
+  grid-template-columns: repeat(2, 6fr);
+  grid-template-rows: repeat(4, 3fr);
+}
+
+.footer-link {
+  font-family: "Open Sans", sans-serif;
+}
+.footer-link:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.footer-link:nth-of-type(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.footer-link:nth-of-type(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
+.footer-link:nth-of-type(4) {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.footer-logo {
+  filter: brightness(0) invert(1);
+}
+
+.footer-social {
+  filter: brightness(0) invert(1);
+  align-self: flex-start;
+  justify-self: center;
+}
+.footer-social__links {
+  display: flex;
+  gap: 1rem;
+}
+
+header {
+  margin-bottom: 7.5rem;
 }
 
 .container {
@@ -88,7 +230,61 @@ footer {
 }
 
 .cta-section {
+  display: flex;
   padding: 2rem 5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.hero-content, .main-content {
+  margin-right: 4rem;
+}
+
+.hero-illustration, .main-illustration {
+  width: 45%;
+}
+
+body {
+  padding-top: 2rem;
+}
+
+main {
+  background-image: url("../../images/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 240rem 45rem;
+  background-position: 50% 100%;
+  padding: 10rem 0rem 5rem 0rem;
+}
+
+.main-text {
+  font-size: 1rem;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(238deg, 22%, 44%);
+  color: hsl(240deg, 75%, 98%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.cta-section__description {
+  width: 40%;
+}
+.cta-section__heading {
+  font-size: 2rem;
+}
+.cta-section__text {
+  font-size: 1rem;
+}
+
+.cta-form {
+  width: 30%;
+  position: relative;
+  right: 8rem;
 }
 
 .nav {
@@ -97,6 +293,17 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.nav__.nav-link {
-  display: none;
+.nav li {
+  display: inline-block;
+}
+.nav__link {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  color: hsl(238deg, 22%, 44%);
+  font-weight: 700;
+  margin: 0rem 1.5rem;
+}
+.nav__link:active, .nav__link:hover {
+  color: hsl(224deg, 93%, 58%);
 }/*# sourceMappingURL=main.css.map */

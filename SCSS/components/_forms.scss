@@ -1,0 +1,19 @@
+.hero-input {
+    width: 19rem;
+    height: 1rem;
+    padding: .6rem;
+    margin-right: 1rem;
+
+    &::placeholder {
+        opacity: 50%;
+    }
+}
+
+.cta-form__input {
+    @extend .hero-input;
+    width: 25rem;
+    margin: 0rem 0rem 1rem 0rem;
+    border-radius: 3px;
+    border: none;
+    padding: 1rem 1.5rem;
+}

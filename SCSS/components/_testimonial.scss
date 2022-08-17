@@ -1,0 +1,41 @@
+.testimonial {
+    box-shadow: 0 0 3px hsl(214, 16%, 92%);
+    background-color: white;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    width: 42%;
+    
+    &__text {
+        font-size: .8rem;
+        font-weight: $font-cta-normal;
+    }
+
+    &__signature {
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 2.5rem 7rem;
+    }
+
+    &__img {
+        grid-row: span 2;
+        border-radius: 50%;
+        height: 2rem;
+    }
+
+    &__name {
+        grid-row: 1;
+        grid-column: 2;
+        font-size: .7rem;
+        font-weight: $font-cta-bold;
+        margin-bottom: .1rem;
+    }
+
+    &__job-title {
+        grid-row: 2;
+        grid-column: 2;
+        font-size: .6rem;
+        margin-bottom: 0rem;
+    }
+
+
+}

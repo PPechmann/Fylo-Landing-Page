@@ -4,13 +4,26 @@
     background-color: $btn-blue;
     border: none;
     color: white;
-    padding: .5rem 4rem;
+    padding: .75rem 4.5rem;
     border-radius: 3px;
     font-family: $font-cta;
     font-weight: $font-cta-bold;
+    font-size: .8rem
 }
 
-.cta-section-btn {
+.cta-form__btn {
     @extend .cta-btn;
-    padding: .5rem 2rem;
+    padding: 1rem 3rem;
+    display: block;
+}
+
+.main-link {
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid $link-cyan;
+    padding-bottom: .2rem;
+    color: $link-cyan;
+    font-size: 1.2rem;
+    width: 12rem;
+    margin-bottom: 1.5rem;
 }

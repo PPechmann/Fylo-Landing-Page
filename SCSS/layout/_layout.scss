@@ -1,9 +1,48 @@
-.container {
-    display: flex;
-    align-items: center;
-    padding:$general-padding;
+body {
+    padding-top: 2rem;
+}
+
+
+
+main {
+    background-image: url("../../images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 240rem 45rem;
+    background-position: 50% 100%;
+    padding: 10rem 0rem 5rem 0rem;
+}
+
+.main-text {
+    font-size: 1rem;
 }
 
 .cta-section {
-    padding: $general-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-desatblue;
+    color: $neutral-blue;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    &__description {
+        width: 40%;
+    }
+
+    &__heading {
+        font-size: 2rem;
+    }
+
+    &__text {
+        font-size: 1rem;
+    }
 }
+
+.cta-form {
+    width: 30%;
+    position: relative;
+    right: 8rem;
+
+}
+
+
