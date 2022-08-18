@@ -45,6 +45,11 @@ footer {
         grid-column: 1;
         grid-row: 4;
     }
+
+    &:hover {
+        color: $primary-desatblue;
+        cursor: pointer;
+    }
 }
 
 .footer-logo {
@@ -52,14 +57,20 @@ footer {
 }
 
 .footer-social {
-    filter:  brightness(0) invert(1);
     align-self: flex-start;
     justify-self: center;
+    display: flex;
+    gap: 1rem;
 
-    &__links{
-        display: flex;
-        gap: 1rem;
+    &__link {
+        color: white;
+    }
+
+    &__link:hover{
+        color: $primary-desatblue;
+
 
     }
 }
+
 

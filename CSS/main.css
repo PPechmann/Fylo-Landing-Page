@@ -113,6 +113,9 @@ p {
 .hero-input::placeholder, .cta-form__input::placeholder {
   opacity: 50%;
 }
+.hero-input:focus, .cta-form__input:focus {
+  outline: none;
+}
 
 .cta-form__input {
   width: 25rem;
@@ -120,6 +123,9 @@ p {
   border-radius: 3px;
   border: none;
   padding: 1rem 1.5rem;
+}
+.cta-form__input:focus {
+  outline: none;
 }
 
 .testimonial {
@@ -204,19 +210,26 @@ footer {
   grid-column: 1;
   grid-row: 4;
 }
+.footer-link:hover {
+  color: hsl(238deg, 22%, 44%);
+  cursor: pointer;
+}
 
 .footer-logo {
   filter: brightness(0) invert(1);
 }
 
 .footer-social {
-  filter: brightness(0) invert(1);
   align-self: flex-start;
   justify-self: center;
-}
-.footer-social__links {
   display: flex;
   gap: 1rem;
+}
+.footer-social__link {
+  color: white;
+}
+.footer-social__link:hover {
+  color: hsl(238deg, 22%, 44%);
 }
 
 header {

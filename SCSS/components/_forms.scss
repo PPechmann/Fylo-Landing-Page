@@ -7,7 +7,12 @@
     &::placeholder {
         opacity: 50%;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
+
 
 .cta-form__input {
     @extend .hero-input;
@@ -16,4 +21,8 @@
     border-radius: 3px;
     border: none;
     padding: 1rem 1.5rem;
+
+    &:focus {
+        outline: none;
+    }
 }
