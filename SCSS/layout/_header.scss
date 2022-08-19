@@ -25,3 +25,116 @@ p {
 .hero-illustration, .main-illustration {
     width: 45%;
 }
+
+@include respond(laptop) {
+    .hero-input {
+        width: 10rem;  
+        margin-right: 0rem;      
+    }
+    .cta-btn {
+        padding: .75rem 3.5rem;
+    }
+}
+
+@include respond(tablet) {
+    
+    header {
+        margin-bottom: 0rem;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .hero-illustration {
+        order: 1;
+        width: 70%;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-content {
+        order: 2;
+        text-align: center;
+        margin-right: 0rem;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-input {
+        width: 30rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-btn {
+        width: 31.5rem;
+    }
+}
+
+@include respond(mobile-large) {
+    .hero-illustration {
+        width: 100%;
+    }
+
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-input {
+        width: 20rem;
+    }
+
+    .cta-btn {
+        width: 21.5rem;
+    }
+}
+
+@include respond(mobile-large) {
+    header {
+        padding: 0rem 2rem;
+    }
+
+    .hero-heading {
+        font-size: 1.5rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-input {
+        width: 19rem;
+    }
+
+    .cta-btn {
+        width: 20.5rem;
+    }
+}
+
+@include respond(mobile-small) {
+    header {
+        padding: 0rem 1rem;
+    }
+
+    .hero-heading {
+        font-size: 1rem;
+    }
+
+    .hero-text {
+        font-size: .8rem;
+    }
+
+    .hero-input {
+        width: 15rem;
+    }
+
+    .cta-btn {
+        width: 16.5rem;
+    }
+}

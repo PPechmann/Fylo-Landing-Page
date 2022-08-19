@@ -13,16 +13,64 @@
     }
 }
 
+.cta-form {
+    width: 30%;
+    position: relative;
+    right: 8rem;
 
-.cta-form__input {
-    @extend .hero-input;
-    width: 25rem;
-    margin: 0rem 0rem 1rem 0rem;
-    border-radius: 3px;
-    border: none;
-    padding: 1rem 1.5rem;
 
-    &:focus {
-        outline: none;
+    &__input {
+        width: 25rem;
+        margin: 0rem 0rem 1rem 0rem;
+        border-radius: 3px;
+        border: none;
+        padding: 1rem 1.5rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+}
+
+
+@include respond(laptop) {
+    .cta-form__input {
+        width: 20rem;
+        }
+}
+
+@include respond(tablet) {
+    .cta-form {
+        width: 100%;
+        margin: auto;
+        position: static;
+
+
+        &__btn {
+            width: 23rem;
+            margin: auto;
+        }
     }
 }
+
+@include respond(mobile-large) {
+    .cta-form{
+        &__input {
+            width: 15rem;
+            padding: .75rem 1.25rem;
+        }
+
+        &__btn {
+            width: 17.5rem;
+            padding: .75rem 2.5rem;
+        }
+    }
+}
+
+
+
+
+
+
+

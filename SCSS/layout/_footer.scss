@@ -74,3 +74,90 @@ footer {
 }
 
 
+@include respond(laptop) {
+    .footer-links {
+        row-gap: 1.5rem;
+        column-gap: 7.5rem;
+    }
+}
+
+@include respond(tablet) {
+    .footer-grid {
+        font-size: 1rem;
+        column-gap: 3rem;
+
+        &__phone-icon, &__mail-icon {
+            margin-right: .5rem;
+        }
+    }
+
+    .footer-links {
+        column-gap: 3rem;
+        row-gap: 1rem;
+    }
+
+    .footer-social {
+        justify-self: flex-start;
+    }
+}
+
+@include respond(mobile-large) {
+
+    footer {
+        padding: 3.5rem 3rem;
+    }
+    .footer-logo {
+        margin-bottom: 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 12fr;
+        row-gap: 1rem;
+    }
+
+    .footer-nav {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        grid-template-columns: 12fr;
+    }
+
+    .footer-social {
+        justify-self: center;
+    }
+
+}
+
+@include respond(mobile-medium) {
+
+    .footer-logo {
+        height: 3rem;
+    }
+
+
+    .footer-nav {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        grid-template-columns: 12fr;
+    }
+
+    .footer-social {
+        justify-self: center;
+    }
+
+}
+
+@include respond(mobile-medium) {
+
+    .footer-logo {
+        height: 2.5rem;
+    }
+
+    .footer-grid {
+        font-size: .8rem;
+    }
+
+}

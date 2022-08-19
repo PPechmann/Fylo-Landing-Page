@@ -12,7 +12,12 @@
 }
 
 .cta-form__btn {
-    @extend .cta-btn;
+    background-color: $btn-blue;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-family: $font-cta;
+    font-weight: $font-cta-bold;
     padding: 1rem 3rem;
     display: block;
 }

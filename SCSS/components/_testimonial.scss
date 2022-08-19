@@ -4,7 +4,7 @@
     border-radius: 3px;
     padding: 1rem 2rem;
     width: 42%;
-    
+
     &__text {
         font-size: .8rem;
         font-weight: $font-cta-normal;
@@ -37,5 +37,29 @@
         margin-bottom: 0rem;
     }
 
+}
 
+@include respond(tablet) {
+    .testimonial {
+        margin: 1.5rem auto;
+        text-align: left;
+    }
+}
+
+@include respond(mobile-large) {
+    .testimonial {
+        width: 18rem;
+    }
+}
+
+@include respond(mobile-medium) {
+    .testimonial {
+        width: 15rem;
+    }
+}
+
+@include respond(mobile-small) {
+    .testimonial {
+        width: 12rem;
+    }
 }
