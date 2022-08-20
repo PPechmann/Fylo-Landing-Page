@@ -141,6 +141,7 @@ main {
 
     .cta-section {
         padding: 3rem;
+        
         &__heading {
             font-size: 1.5rem;
         }
@@ -170,22 +171,13 @@ main {
 
     .cta-section {
         padding: 3rem;
+
         &__heading {
             font-size: 1.5rem;
         }
 
         &__text {
             font-size: .8rem;
-        }
-    }
-
-    .cta-form {
-        &__input {
-            width: 12rem;
-        }
-
-        &__btn {
-            width: 14rem;
         }
     }
 

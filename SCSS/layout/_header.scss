@@ -26,6 +26,18 @@ p {
     width: 45%;
 }
 
+.header-mail-validation {
+    position: static;
+    display: none;
+    color: red;
+}
+
+.cta-mail-validation {
+    color: red;
+    position: relative;
+    bottom: 1rem;
+}
+
 @include respond(laptop) {
     .hero-input {
         width: 10rem;  
@@ -68,6 +80,13 @@ p {
         margin-bottom: 1rem;
     }
 
+    .header-mail-validation {
+        position: relative;
+        bottom: 3.5rem;
+        left: -10.5rem;
+    }
+    
+
     .cta-btn {
         width: 31.5rem;
     }
@@ -93,6 +112,11 @@ p {
     .cta-btn {
         width: 21.5rem;
     }
+
+    .header-mail-validation {
+        bottom: 14.7rem;
+        left: 3.2rem;
+    }
 }
 
 @include respond(mobile-large) {
@@ -114,6 +138,16 @@ p {
 
     .cta-btn {
         width: 20.5rem;
+    }
+
+}
+
+@include respond(mobile-medium) {
+    .header-mail-validation {
+        position: relative;
+        top: -3.5rem;
+        left: -5rem;
+
     }
 }
 

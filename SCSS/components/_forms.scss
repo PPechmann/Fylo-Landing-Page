@@ -20,11 +20,11 @@
 
 
     &__input {
-        width: 25rem;
         margin: 0rem 0rem 1rem 0rem;
         border-radius: 3px;
         border: none;
         padding: 1rem 1.5rem;
+        width: 30rem;
 
         &:focus {
             outline: none;
@@ -42,14 +42,16 @@
 
 @include respond(tablet) {
     .cta-form {
-        width: 100%;
+        width: 50%;
         margin: auto;
         position: static;
 
+        &__input {
+            width: 82%;
+        }
 
         &__btn {
-            width: 23rem;
-            margin: auto;
+            width: 100%;
         }
     }
 }
@@ -57,16 +59,27 @@
 @include respond(mobile-large) {
     .cta-form{
         &__input {
-            width: 15rem;
             padding: .75rem 1.25rem;
         }
 
         &__btn {
-            width: 17.5rem;
+            width: 100%;
             padding: .75rem 2.5rem;
         }
     }
 }
+
+@include respond(mobile-medium) {
+    .cta-form{
+        width: 75%;
+
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+
+
 
 
 

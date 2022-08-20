@@ -81,6 +81,10 @@ p {
   font-weight: 700;
   font-size: 0.8rem;
 }
+.cta-btn:hover, .cta-btn:active {
+  opacity: 50%;
+  cursor: pointer;
+}
 
 .cta-form__btn {
   background-color: hsl(224deg, 93%, 58%);
@@ -92,6 +96,10 @@ p {
   padding: 1rem 3rem;
   display: block;
 }
+.cta-form__btn:hover, .cta-form__btn:active {
+  opacity: 50%;
+  cursor: pointer;
+}
 
 .main-link {
   display: block;
@@ -102,6 +110,9 @@ p {
   font-size: 1.2rem;
   width: 12rem;
   margin-bottom: 1.5rem;
+}
+.main-link:hover, .main-link:active {
+  filter: brightness(150%);
 }
 
 .hero-input {
@@ -129,11 +140,11 @@ p {
   right: 8rem;
 }
 .cta-form__input {
-  width: 25rem;
   margin: 0rem 0rem 1rem 0rem;
   border-radius: 3px;
   border: none;
   padding: 1rem 1.5rem;
+  width: 30rem;
 }
 .cta-form__input:focus {
   outline: none;
@@ -146,23 +157,32 @@ p {
 }
 @media only screen and (max-width: 768px) {
   .cta-form {
-    width: 100%;
+    width: 50%;
     margin: auto;
     position: static;
   }
+  .cta-form__input {
+    width: 82%;
+  }
   .cta-form__btn {
-    width: 23rem;
-    margin: auto;
+    width: 100%;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 610px) {
   .cta-form__input {
-    width: 15rem;
     padding: 0.75rem 1.25rem;
   }
   .cta-form__btn {
-    width: 17.5rem;
+    width: 100%;
     padding: 0.75rem 2.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cta-form {
+    width: 75%;
+  }
+  .cta-form__btn {
+    width: 100%;
   }
 }
 .testimonial {
@@ -206,17 +226,17 @@ p {
     text-align: left;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 610px) {
   .testimonial {
     width: 18rem;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
   .testimonial {
     width: 15rem;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   .testimonial {
     width: 12rem;
   }
@@ -315,7 +335,7 @@ footer {
     justify-self: flex-start;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 610px) {
   footer {
     padding: 3.5rem 3rem;
   }
@@ -336,7 +356,7 @@ footer {
     justify-self: center;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
   .footer-logo {
     height: 3rem;
   }
@@ -350,7 +370,7 @@ footer {
     justify-self: center;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 360px) {
   .footer-logo {
     height: 2.5rem;
   }
@@ -383,6 +403,18 @@ p {
 
 .hero-illustration, .main-illustration {
   width: 45%;
+}
+
+.header-mail-validation {
+  position: static;
+  display: none;
+  color: red;
+}
+
+.cta-mail-validation {
+  color: red;
+  position: relative;
+  bottom: 1rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -419,11 +451,16 @@ p {
     width: 30rem;
     margin-bottom: 1rem;
   }
+  .header-mail-validation {
+    position: relative;
+    bottom: 3.5rem;
+    left: -10.5rem;
+  }
   .cta-btn {
     width: 31.5rem;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 610px) {
   .hero-illustration {
     width: 100%;
   }
@@ -439,8 +476,12 @@ p {
   .cta-btn {
     width: 21.5rem;
   }
+  .header-mail-validation {
+    bottom: 14.7rem;
+    left: 3.2rem;
+  }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 610px) {
   header {
     padding: 0rem 2rem;
   }
@@ -457,7 +498,14 @@ p {
     width: 20.5rem;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
+  .header-mail-validation {
+    position: relative;
+    top: -3.5rem;
+    left: -5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
   header {
     padding: 0rem 1rem;
   }
@@ -544,7 +592,7 @@ main {
     width: 100%;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 610px) {
   .cta-section {
     padding: 2rem;
   }
@@ -573,7 +621,7 @@ main {
     margin-bottom: 1.5rem;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
   main {
     background-size: 130rem 56rem;
     background-position: 50% 100%;
@@ -604,7 +652,7 @@ main {
     padding: 0.5rem 2rem;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   main {
     background-size: 130rem 52rem;
     padding: 5rem 1rem 1.5rem 1rem;
@@ -617,12 +665,6 @@ main {
   }
   .cta-section__text {
     font-size: 0.8rem;
-  }
-  .cta-form__input {
-    width: 12rem;
-  }
-  .cta-form__btn {
-    width: 14rem;
   }
 }
 .nav {
@@ -639,6 +681,7 @@ main {
   font-family: "Raleway", sans-serif;
   color: hsl(238deg, 22%, 44%);
   font-weight: 700;
+  font-size: 1.2rem;
   margin: 0rem 1rem;
 }
 .nav__link:active, .nav__link:hover {
@@ -651,7 +694,7 @@ main {
     margin-bottom: 5rem;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 610px) {
   .nav {
     margin-bottom: 2.5rem;
   }
@@ -663,7 +706,7 @@ main {
     margin: 0rem 0.5rem;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
   .logo {
     height: 1.5rem;
   }

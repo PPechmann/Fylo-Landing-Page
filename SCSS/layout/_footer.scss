@@ -150,7 +150,7 @@ footer {
 
 }
 
-@include respond(mobile-medium) {
+@include respond(mobile-small) {
 
     .footer-logo {
         height: 2.5rem;
